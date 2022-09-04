@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update(){
         if(!isMoving){
-            input.x =Input.GetAxisRaw("Horizontal");
-            input.y =Input.GetAxisRaw("Vertical");
+            input.x =CrossPlatformInputManager.GetAxis("Horizontal");
+            input.y =CrossPlatformInputManager.GetAxis("Vertical");
 
             if(input != Vector2.zero){
                 animator.SetFloat("moveX",input.x);
