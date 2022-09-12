@@ -10,11 +10,6 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-     public void Back()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
-
      public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
@@ -24,4 +19,10 @@ public class SceneSwitcher : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class backbutton : MonoBehaviour
 {
-    
+    public GameObject closeWindow;
 
     // Update is called once per frame
     private void Update()
@@ -14,7 +14,7 @@ public class backbutton : MonoBehaviour
 
             if(SceneManager.GetActiveScene().buildIndex==0){
 
-                Application.Quit();
+                closeWindow.SetActive(true);
             }
             else{
                 SceneManager.LoadScene(0);
