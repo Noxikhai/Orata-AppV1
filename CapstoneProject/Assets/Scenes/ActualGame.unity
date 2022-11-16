@@ -36233,7 +36233,7 @@ MonoBehaviour:
     in barangay Bactad, Urdaneta City, Pangasinan.
   - He grew up in a poor family in this early age.
   - ' In Elementary, he had to sell vegetables so he can pay the school fees.'
-  textSpeed: 0.18
+  textSpeed: 0
 --- !u!114 &2085072524
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Update(){
+
+    public void HandleUpdate(){
         if(!isMoving){
             input.x =CrossPlatformInputManager.GetAxis("Horizontal");
             input.y =CrossPlatformInputManager.GetAxis("Vertical");
